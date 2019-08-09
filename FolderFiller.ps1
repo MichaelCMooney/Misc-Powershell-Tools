@@ -1,0 +1,1 @@
+Get-ChildItem C:\Desired\Location -Recurse -Directory | Where-Object {(Get-ChildItem $_.FullName -File -Recurse -Force).Count -eq 0} | ForEach-Object {New-Item -ItemType file -Path "$($_.FullName)" -Name "$($_.Name).txt" }
