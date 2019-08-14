@@ -1,3 +1,5 @@
+# Start-FileWatcher.ps1
+
 [CmdletBinding()]
 Param(
     # Path to be monitored
